@@ -6,7 +6,6 @@ import pandas as pd
 
 tfidf = TfidfVectorizer(stop_words="english")
 
-# df = pd.read_csv(r"C:\Users\frann\Desktop\ML Ops\streamlit\data_final.csv")
 df = pd.read_csv("data_final.csv")
 
 df["description"] = df["description"].fillna("")
