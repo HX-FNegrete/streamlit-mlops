@@ -6,7 +6,8 @@ import pandas as pd
 
 tfidf = TfidfVectorizer(stop_words="english")
 
-df = pd.read_csv("data_final.csv")
+url = "https://drive.google.com/file/d/1xkKDLfYydan6g7G2du9mEX2PwJy8Kq-7/view?usp=share_link"
+df = pd.read_csv(url)
 
 df["description"] = df["description"].fillna("")
 
