@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
+
 st.write("""
 # Tutorial Streamlit para PF Codo a Codo
 Pueden encontrar el repo en el siguiente enlace https://github.com/HX-FNegrete/streamlit-mlops
