@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st #pip install streamlit
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 import plotly.express as px
 
 
@@ -31,8 +31,24 @@ df["States"] = df["Location"].str.split(", ").str[-1]
 st.write("""
 ## Gráfico barras de los estados de USA con más anuncios laborales:
 """)
+# plt.figure(figsize=(12, 10))
+# sns.countplot(data=df, x=df['States'])
+# st.pyplot(plt)
+
+# Create the figure
 plt.figure(figsize=(12, 10))
-sns.countplot(data=df, x=df['States'])
+
+# Create the count plot
+plt.hist(df['States'])
+
+# Add a title
+plt.title('Count of States')
+
+# Add labels to the axes
+plt.xlabel('State')
+plt.ylabel('Count')
+
+# Show the plot
 st.pyplot(plt)
 
 
